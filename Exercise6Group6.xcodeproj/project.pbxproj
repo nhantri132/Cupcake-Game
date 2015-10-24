@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F45B2CA51BDB5422005979DC /* box.png in Resources */ = {isa = PBXBuildFile; fileRef = F45B2CA41BDB5422005979DC /* box.png */; };
+		F45B2CA71BDB61C7005979DC /* gameBG.png in Resources */ = {isa = PBXBuildFile; fileRef = F45B2CA61BDB61C7005979DC /* gameBG.png */; };
+		F45B2CA91BDB6362005979DC /* clouds.png in Resources */ = {isa = PBXBuildFile; fileRef = F45B2CA81BDB6362005979DC /* clouds.png */; };
 		F69938EA1BD054D7006D296E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F69938E91BD054D7006D296E /* main.m */; };
 		F69938ED1BD054D7006D296E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F69938EC1BD054D7006D296E /* AppDelegate.m */; };
 		F69938F01BD054D7006D296E /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = F69938EF1BD054D7006D296E /* GameScene.m */; };
@@ -17,6 +20,11 @@
 		F69938FD1BD054D7006D296E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F69938FB1BD054D7006D296E /* LaunchScreen.storyboard */; };
 		F69939081BD054D7006D296E /* Exercise6Group6Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = F69939071BD054D7006D296E /* Exercise6Group6Tests.m */; };
 		F69939131BD054D7006D296E /* Exercise6Group6UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F69939121BD054D7006D296E /* Exercise6Group6UITests.m */; };
+		F699392B1BD06E9C006D296E /* GameOverScene.m in Sources */ = {isa = PBXBuildFile; fileRef = F699392A1BD06E9C006D296E /* GameOverScene.m */; };
+		F6FB4F771BD07A0A00EF3A6E /* cupcakeTest.png in Resources */ = {isa = PBXBuildFile; fileRef = F6FB4F731BD07A0A00EF3A6E /* cupcakeTest.png */; };
+		F6FB4F781BD07A0A00EF3A6E /* eat sound effect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F6FB4F741BD07A0A00EF3A6E /* eat sound effect.mp3 */; };
+		F6FB4F791BD07A0A00EF3A6E /* FATBOY.png in Resources */ = {isa = PBXBuildFile; fileRef = F6FB4F751BD07A0A00EF3A6E /* FATBOY.png */; };
+		F6FB4F7A1BD07A0A00EF3A6E /* gameplay.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F6FB4F761BD07A0A00EF3A6E /* gameplay.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +45,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F45B2CA41BDB5422005979DC /* box.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = box.png; sourceTree = "<group>"; };
+		F45B2CA61BDB61C7005979DC /* gameBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gameBG.png; sourceTree = "<group>"; };
+		F45B2CA81BDB6362005979DC /* clouds.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clouds.png; sourceTree = "<group>"; };
 		F69938E51BD054D7006D296E /* Exercise6Group6.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Exercise6Group6.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F69938E91BD054D7006D296E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F69938EB1BD054D7006D296E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -56,6 +67,12 @@
 		F699390E1BD054D7006D296E /* Exercise6Group6UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Exercise6Group6UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F69939121BD054D7006D296E /* Exercise6Group6UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Exercise6Group6UITests.m; sourceTree = "<group>"; };
 		F69939141BD054D7006D296E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F69939291BD06E9C006D296E /* GameOverScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameOverScene.h; sourceTree = "<group>"; };
+		F699392A1BD06E9C006D296E /* GameOverScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameOverScene.m; sourceTree = "<group>"; };
+		F6FB4F731BD07A0A00EF3A6E /* cupcakeTest.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cupcakeTest.png; path = Sounds/cupcakeTest.png; sourceTree = "<group>"; };
+		F6FB4F741BD07A0A00EF3A6E /* eat sound effect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "eat sound effect.mp3"; path = "Sounds/eat sound effect.mp3"; sourceTree = "<group>"; };
+		F6FB4F751BD07A0A00EF3A6E /* FATBOY.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = FATBOY.png; path = Sounds/FATBOY.png; sourceTree = "<group>"; };
+		F6FB4F761BD07A0A00EF3A6E /* gameplay.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = gameplay.mp3; path = Sounds/gameplay.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,10 +123,13 @@
 		F69938E71BD054D7006D296E /* Exercise6Group6 */ = {
 			isa = PBXGroup;
 			children = (
+				F69939261BD05A8C006D296E /* Sounds */,
 				F69938EB1BD054D7006D296E /* AppDelegate.h */,
 				F69938EC1BD054D7006D296E /* AppDelegate.m */,
 				F69938EE1BD054D7006D296E /* GameScene.h */,
 				F69938EF1BD054D7006D296E /* GameScene.m */,
+				F69939291BD06E9C006D296E /* GameOverScene.h */,
+				F699392A1BD06E9C006D296E /* GameOverScene.m */,
 				F69938F11BD054D7006D296E /* GameScene.sks */,
 				F69938F31BD054D7006D296E /* GameViewController.h */,
 				F69938F41BD054D7006D296E /* GameViewController.m */,
@@ -146,6 +166,20 @@
 				F69939141BD054D7006D296E /* Info.plist */,
 			);
 			path = Exercise6Group6UITests;
+			sourceTree = "<group>";
+		};
+		F69939261BD05A8C006D296E /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				F6FB4F731BD07A0A00EF3A6E /* cupcakeTest.png */,
+				F6FB4F741BD07A0A00EF3A6E /* eat sound effect.mp3 */,
+				F6FB4F751BD07A0A00EF3A6E /* FATBOY.png */,
+				F6FB4F761BD07A0A00EF3A6E /* gameplay.mp3 */,
+				F45B2CA41BDB5422005979DC /* box.png */,
+				F45B2CA81BDB6362005979DC /* clouds.png */,
+				F45B2CA61BDB61C7005979DC /* gameBG.png */,
+			);
+			name = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,8 +286,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				F69938F21BD054D7006D296E /* GameScene.sks in Resources */,
+				F45B2CA51BDB5422005979DC /* box.png in Resources */,
+				F45B2CA91BDB6362005979DC /* clouds.png in Resources */,
 				F69938FD1BD054D7006D296E /* LaunchScreen.storyboard in Resources */,
+				F6FB4F781BD07A0A00EF3A6E /* eat sound effect.mp3 in Resources */,
+				F6FB4F791BD07A0A00EF3A6E /* FATBOY.png in Resources */,
 				F69938FA1BD054D7006D296E /* Assets.xcassets in Resources */,
+				F6FB4F7A1BD07A0A00EF3A6E /* gameplay.mp3 in Resources */,
+				F45B2CA71BDB61C7005979DC /* gameBG.png in Resources */,
+				F6FB4F771BD07A0A00EF3A6E /* cupcakeTest.png in Resources */,
 				F69938F81BD054D7006D296E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -279,6 +320,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F699392B1BD06E9C006D296E /* GameOverScene.m in Sources */,
 				F69938F51BD054D7006D296E /* GameViewController.m in Sources */,
 				F69938ED1BD054D7006D296E /* AppDelegate.m in Sources */,
 				F69938F01BD054D7006D296E /* GameScene.m in Sources */,
@@ -510,6 +552,7 @@
 				F69939191BD054D7006D296E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F699391A1BD054D7006D296E /* Build configuration list for PBXNativeTarget "Exercise6Group6Tests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +561,7 @@
 				F699391C1BD054D7006D296E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F699391D1BD054D7006D296E /* Build configuration list for PBXNativeTarget "Exercise6Group6UITests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +570,7 @@
 				F699391F1BD054D7006D296E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

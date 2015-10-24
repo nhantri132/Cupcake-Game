@@ -32,21 +32,18 @@
 
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
-
-    // Configure the view.
-    SKView * skView = (SKView *)self.view;
-    skView.showsFPS = YES;
-    skView.showsNodeCount = YES;
-    /* Sprite Kit applies additional optimizations to improve rendering performance */
-    skView.ignoresSiblingOrder = YES;
+    [super viewWillLayoutSubviews];
     
-    // Create and configure the scene.
-    GameScene *scene = [GameScene unarchiveFromFile:@"GameScene"];
-    scene.scaleMode = SKSceneScaleModeAspectFill;
-    
-    // Present the scene.
-    [skView presentScene:scene];
+    SKView *skView = (SKView *)self.view;
+    if(!skView.scene) {
+        skView.showsFPS = YES;
+        skView.showsNodeCount = YES;
+        
+        SKScene *scene = [GameScene sceneWithSize:skView.bounds.size];
+        scene.scaleMode = SKSceneScaleModeAspectFill;
+        
+        [skView presentScene:scene];
+    }
 }
 
 - (BOOL)shouldAutorotate
@@ -71,6 +68,21 @@
 
 - (BOOL)prefersStatusBarHidden {
     return YES;
+}
+
+- (void)viewWillLayoutSubviews{
+    [super viewWillLayoutSubviews];
+    
+    SKView *skView = (SKView *)self.view;
+    if(!skView.scene) {
+        skView.showsFPS = YES;
+        skView.showsNodeCount = YES;
+        
+        SKScene *scene = [GameScene sceneWithSize:skView.bounds.size];
+        scene.scaleMode = SKSceneScaleModeAspectFill;
+        
+        [skView presentScene:scene];
+    }
 }
 
 @end
