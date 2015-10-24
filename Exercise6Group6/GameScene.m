@@ -36,8 +36,8 @@ NSTimeInterval startTime;
         //self.backgroundColor = [SKColor colorWithRed: (0.15) green:(0.45) blue: (0.3) alpha:(1.0)];
         
         countDown = [SKLabelNode labelNodeWithFontNamed:@"Futura-Medium"];
-        countDown.fontSize = 40;
-        countDown.position = CGPointMake(880, 650);
+        countDown.fontSize = 30;
+        countDown.position = CGPointMake(140, 85);
         countDown.verticalAlignmentMode = SKLabelVerticalAlignmentModeCenter;
         countDown.fontColor = [SKColor whiteColor ];
         countDown.name = @"countDown";
@@ -70,8 +70,8 @@ NSTimeInterval startTime;
     scoreLabel = [SKLabelNode labelNodeWithFontNamed:@"Futura-Medium"];
     
     scoreLabel.text = @"Score: 0", cupcakesCollected;
-    scoreLabel.fontSize = 40;
-    scoreLabel.position = CGPointMake(850.00, 700.00);
+    scoreLabel.fontSize = 30;
+    scoreLabel.position = CGPointMake(140, 95);
     scoreLabel.color = [UIColor greenColor];
     scoreLabel.zPosition = 2;
     
@@ -79,9 +79,9 @@ NSTimeInterval startTime;
     self.physicsWorld.contactDelegate = self;
     
     basket = [SKSpriteNode spriteNodeWithImageNamed:@"FATBOY"];
-    basket.xScale = 0.5;
-    basket.yScale = 0.5;
-    basket.position = CGPointMake(500,100);
+    basket.xScale = 0.55;
+    basket.yScale = 0.55;
+    basket.position = CGPointMake(500,120);
     basket.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:basket.size];
     
     //moving the basket
@@ -103,11 +103,11 @@ NSTimeInterval startTime;
     clouds.position = CGPointMake(500,450);
     
     box = [SKSpriteNode spriteNodeWithImageNamed:@"box"];
-    box.xScale = 0.23;
-    box.yScale = 0.23;
+    box.xScale = 0.14;
+    box.yScale = 0.14;
     box.zPosition = 1.5;
-    box.alpha = 0.65;
-    box.position = CGPointMake(880,680);
+    box.alpha = 0.8;
+    box.position = CGPointMake(140,90);
     
     [self addChild:clouds];
     [self addChild:box];
@@ -152,7 +152,7 @@ NSTimeInterval startTime;
 
 -(void)updateWithTimeSinceLastUpdate:(CFTimeInterval)timeSinceLast {
     self.lastSpawnTimeInterval += timeSinceLast;
-    if (self.lastSpawnTimeInterval > 1) {
+    if (self.lastSpawnTimeInterval > .85) {
         self.lastSpawnTimeInterval = 0;
         [self addCupcake];
     }
@@ -164,9 +164,9 @@ NSTimeInterval startTime;
         startTime = currentTime;
         startGamePlay = NO;
     }
-    int countDownInt = 6 - (int)(currentTime-startTime);
+    int countDownInt = 20 - (int)(currentTime-startTime);
     if(countDownInt > 0){  //if counting down to 0 show counter
-        countDown.text = [NSString stringWithFormat:@"Time Left: %i", countDownInt];
+        countDown.text = [NSString stringWithFormat:@"Time: %i", countDownInt];
     }else { //if not show message, dismiss, whatever you need to do.
         SKTransition *reveal = [SKTransition flipHorizontalWithDuration:0.4];
         SKScene *gameOverScene = [[GameOverScene alloc] initWithSize:self.size won:YES score:cupcakesCollected];
